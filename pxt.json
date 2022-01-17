@@ -1,11 +1,12 @@
 {
-    "name": "H06",
+    "name": "copie",
     "description": "",
     "dependencies": {
         "core": "*",
         "radio": "*",
         "microphone": "*",
-        "maqueen": "github:jhlucky/maqueen#04e836719d009a1e8fe2cb03b324f0b70ee490be"
+        "maqueen": "github:jhlucky/maqueen#04e836719d009a1e8fe2cb03b324f0b70ee490be",
+        "servo": "*"
     },
     "files": [
         "main.blocks",
@@ -26,5 +27,16 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0,
+                    "security_level": null
+                }
+            }
+        }
+    }
 }
